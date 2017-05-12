@@ -17,7 +17,6 @@
 
             body {
                 margin: 0px;
-                overflow: hidden;
                 font-family: monospace;
                 background: black;
                 color: white;
@@ -51,6 +50,10 @@
                 text-decoration: none;
             }
 
+            #banana {
+                height: 100px;
+            }
+
             @media screen and (max-width: 768px) {
                 body {
                     padding: 25px;
@@ -77,6 +80,7 @@
         <h1>The Birthday Terminal</h1>
         <p id="terminal">> </p>
         <p>Coded with <span class="red">♥</span> by Mabo, click <a href="https://github.com/mabotn/mkk-birthday">here</a> to fork this site on GitHub</p>
+        <img id="banana" src="banana.gif" alt="Dancing Banana">
 
         <script>
             var terminal = document.getElementById('terminal')
