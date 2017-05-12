@@ -4,7 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Happy Birthday</title>
+        <meta property="og:title" content="Happy Birthday Kouthair">
+        <meta property="og:type" content="site">
+        <meta property="og:url" content="https://mabotn.github.io/mkk-birthday/index.html">
+        <meta property="og:image" content="https://mabotn.github.io/mkk-birthday/photo.jpg">
+        <meta property="og:description" content="My dear friend Kouthair, I wish you a very happy birthday <3">
+        <meta property="og:site_name" content="Happy Birthday Kouthair">
+        <title>Happy Birthday Kouthair</title>
         <style>
             * {
                 transition: .5s all;
@@ -38,6 +44,7 @@
                 color: #0b0;
                 text-align: justify;
                 margin-right: 12px;
+                line-height: 1.5em;
             }
 
             a {
@@ -67,10 +74,10 @@
     </head>
     
     <body>
-        <img src="https://scontent.ftun1-1.fna.fbcdn.net/v/t1.0-9/12227155_623885697753752_2344750674742868239_n.jpg?oh=ab4509c285c3c9d354e74f8720b0a559&oe=59BAC242" alt="Mohamed Kouthair Kebaili">
+        <img src="photo.jpg" alt="Mohamed Kouthair Kebaili">
         <h1>The Birthday Terminal</h1>
         <p id="terminal">> </p>
-        <p>Made with <span class="red">♥</span> by Mabo, fork me on <a href="https://github.com/mabotn/mkk-birthday">GitHub</a></p>
+        <p>Coded with <span class="red">♥</span> by Mabo, click <a href="https://github.com/mabotn/mkk-birthday">here</a> to fork this site on GitHub</p>
 
         <script>
             var terminal = document.getElementById('terminal')
@@ -80,7 +87,7 @@
                     terminal.innerHTML += sentence[0]
                     sentence = sentence.substr(1)
                 }
-            }, 100);
+            }, 80);
         </script>
     </body>
 </html>
