@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Happy Birthday</title>
+        <style>
+            * {
+                transition: .5s all;
+            }
+
+            body {
+                margin: 0px;
+                overflow: hidden;
+                font-family: monospace;
+                background: black;
+                color: white;
+            }
+
+            img {
+                height: 100vh;
+                float: left;
+                margin-right: 12px;
+            }
+
+            h1 {
+                margin: 0px;
+                padding: 12px;
+                font-weight: 100;
+            }
+
+            .red {
+                color: #b00;
+            }
+
+            #terminal {
+                color: #0b0;
+                text-align: justify;
+                margin-right: 12px;
+            }
+
+            a {
+                color: #bb0;
+                text-decoration: none;
+            }
+
+            @media screen and (max-width: 768px) {
+                body {
+                    padding: 25px;
+                    text-align: center;
+                }
+
+                img {
+                    height: 200px;
+                    border-radius: 200px;
+                    float: none;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+
+                h1 {
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <img src="https://scontent.ftun1-1.fna.fbcdn.net/v/t1.0-9/12227155_623885697753752_2344750674742868239_n.jpg?oh=ab4509c285c3c9d354e74f8720b0a559&oe=59BAC242" alt="Mohamed Kouthair Kebaili">
+        <h1>The Birthday Terminal</h1>
+        <p id="terminal">> </p>
+        <p>Made with <span class="red">♥</span> by Mabo, fork me on <a href="">GitHub</a></p>
+
+        <script>
+            var terminal = document.getElementById('terminal')
+            var sentence = "Hello, my dear friend Kouthair. it's been already more than 3 years full of brilliant moments we spent together, I wish you a very happy birthday and big success in the near future with things you're busy doing."
+            setInterval(function() {
+                if (sentence.length > 0) {
+                    terminal.innerHTML += sentence[0]
+                    sentence = sentence.substr(1)
+                }
+            }, 10);
+        </script>
+    </body>
+</html>
